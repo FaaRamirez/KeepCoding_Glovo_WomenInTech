@@ -19,5 +19,6 @@ join fatima_ramirez_simon.orders o on o.id_order = c.id_order
 join fatima_ramirez_simon.policy_car pc on pc.number_plate = c.number_plate 
 join fatima_ramirez_simon.insurance i on i.id_insurance = pc.id_insurance 
 join fatima_ramirez_simon.inspections i2 on i2.number_plate = c.number_plate
+where c.termination_date  = '4000-01-01'
 group by ag.name, b.name, m.name, c2.name, c.number_plate, o.date_order, i.name, pc.id_policy
 order by "Brand" asc;
