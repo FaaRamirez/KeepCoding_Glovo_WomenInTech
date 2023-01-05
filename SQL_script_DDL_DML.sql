@@ -113,7 +113,8 @@ create table fatima_ramirez_simon.cars(
 	year_manufacturing int not null,
 	id_order varchar(15) not null, --FK
 	price numeric(12,5) not null,
-	id_currency varchar(2) not null --FK
+	id_currency varchar(2) not null, --FK
+	termination_date date not null default '4000-01-01'
 );
 
 alter table fatima_ramirez_simon.cars
@@ -319,21 +320,21 @@ insert into fatima_ramirez_simon.colours (id_colour, name) values('11','yellow')
 
 
 -- CARS
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('4861 BCC','01','02','245','5','2021','01655','55240','01');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('7863 IGL','02','11','150','5','2022','04356','38560','01');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('9003 PCS','03','09','140','5','2022','00875','22060','02');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('7683 LWE','04','06','90','5','2021','00355','14570','02');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('1565 EST','05','04','150','7','2022','01777','22850','01');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('1350 GJB','06','04','530','7','2022','01777','104982','01');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('3863 DDA','07','11','110','5','2022','01657','26450','01');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('8504 AXP','08','09','190','7','2022','01655','31180','01');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('3567 LNM','09','01','328','2','2018','00487','45430','01');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('0032 MSA','10','10','150','5','2020','01901','24950','02');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('6548 RRO','11','10','184','2','2015','00264','32360','02');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('4689 FRS','12','11','231','5','2022','00875','31500','01');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('3134 VLT','13','02','207','5','2022','14401','20550','01');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('0078 ALM','14','06','300','5','2022','01777','33282','01');
-insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency) values('8004 LLS','15','09','150','5','2019','00356','18040','01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('4861 BCC','01','02','245','5','2021','01655','55240','01','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('7863 IGL','02','11','150','5','2022','04356','38560','01','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('9003 PCS','03','09','140','5','2022','00875','22060','02','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('7683 LWE','04','06','90','5','2021','00355','14570','02','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('1565 EST','05','04','150','7','2022','01777','22850','01','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('1350 GJB','06','04','530','7','2022','01777','104982','01','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('3863 DDA','07','11','110','5','2022','01657','26450','01','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('8504 AXP','08','09','190','7','2022','01655','31180','01','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('3567 LNM','09','01','328','2','2018','00487','45430','01','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('0032 MSA','10','10','150','5','2020','01901','24950','02','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('6548 RRO','11','10','184','2','2015','00264','32360','02','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('4689 FRS','12','11','231','5','2022','00875','31500','01','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('3134 VLT','13','02','207','5','2022','14401','20550','01','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('0078 ALM','14','06','300','5','2022','01777','33282','01','4000-01-01');
+insert into fatima_ramirez_simon.cars (number_plate, id_model, id_colour, hp_engine, seats, year_manufacturing, id_order, price, id_currency, termination_date) values('8004 LLS','15','09','150','5','2019','00356','18040','01','4000-01-01');
 
 
 -- RESULT_INSPECTION
